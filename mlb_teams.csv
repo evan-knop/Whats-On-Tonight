@@ -1,0 +1,31 @@
+team_id,abbreviation,team_name,league_id,league_name,division_id,division_name
+133,ATH,Athletics,103,American League,200,American League West
+134,PIT,Pittsburgh Pirates,104,National League,205,National League Central
+135,SD,San Diego Padres,104,National League,203,National League West
+136,SEA,Seattle Mariners,103,American League,200,American League West
+137,SF,San Francisco Giants,104,National League,203,National League West
+138,STL,St. Louis Cardinals,104,National League,205,National League Central
+139,TB,Tampa Bay Rays,103,American League,201,American League East
+140,TEX,Texas Rangers,103,American League,200,American League West
+141,TOR,Toronto Blue Jays,103,American League,201,American League East
+142,MIN,Minnesota Twins,103,American League,202,American League Central
+143,PHI,Philadelphia Phillies,104,National League,204,National League East
+144,ATL,Atlanta Braves,104,National League,204,National League East
+145,CWS,Chicago White Sox,103,American League,202,American League Central
+146,MIA,Miami Marlins,104,National League,204,National League East
+147,NYY,New York Yankees,103,American League,201,American League East
+158,MIL,Milwaukee Brewers,104,National League,205,National League Central
+108,LAA,Los Angeles Angels,103,American League,200,American League West
+109,AZ,Arizona Diamondbacks,104,National League,203,National League West
+110,BAL,Baltimore Orioles,103,American League,201,American League East
+111,BOS,Boston Red Sox,103,American League,201,American League East
+112,CHC,Chicago Cubs,104,National League,205,National League Central
+113,CIN,Cincinnati Reds,104,National League,205,National League Central
+114,CLE,Cleveland Guardians,103,American League,202,American League Central
+115,COL,Colorado Rockies,104,National League,203,National League West
+116,DET,Detroit Tigers,103,American League,202,American League Central
+117,HOU,Houston Astros,103,American League,200,American League West
+118,KC,Kansas City Royals,103,American League,202,American League Central
+119,LAD,Los Angeles Dodgers,104,National League,203,National League West
+120,WSH,Washington Nationals,104,National League,204,National League East
+121,NYM,New York Mets,104,National League,204,National League East

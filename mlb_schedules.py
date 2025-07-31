@@ -11,26 +11,12 @@ url = (
 resp = requests.get(url)
 data = resp.json()
 
-schedule_csv = "mlb_schedule.csv"
-games = []
-
-# Collect all games data
+# Example: list dates and matchups
 for date in data.get("dates", []):
-    game_date = date["date"]
+    print(date["date"])
     for game in date["games"]:
         away = game["teams"]["away"]["team"]["name"]
         home = game["teams"]["home"]["team"]["name"]
-        
-        row = {
-            "date": game_date,
-            "home": home,
-            "away": away
-        }
-        
-        games.append(row)
+        print(f"  {away} at {home}")
 
-# Load to DataFrame and save
-df = pd.DataFrame(games)
-df.to_csv(schedule_csv, index=False)
-
-print(f"Saved {len(games)} games to {schedule_csv}")
+        #

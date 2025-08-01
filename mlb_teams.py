@@ -37,6 +37,6 @@ for team in data.get("teams"):
 
 # Load to DataFrame and save
 df = pd.DataFrame(teams)
-df.to_csv('teams_csv', index=False)
+df.to_csv('mlb_teams.csv', index=False)
 
 print("Saved mlb_teams.csv")

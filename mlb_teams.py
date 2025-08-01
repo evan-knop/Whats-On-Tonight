@@ -20,6 +20,7 @@ for team in data.get("teams"):
     league_name = team.get("league", {}).get("name")
     division_id = team.get("division", {}).get("id")
     division_name = team.get("division", {}).get("name")
+    logo_url = f"https://www.mlbstatic.com/team-logos/team-cap-on-dark/{team_id}.svg"
 
     row = {
             "team_id": team_id,
@@ -28,13 +29,14 @@ for team in data.get("teams"):
             "league_id": league_id,
             "league_name": league_name,
             "division_id": division_id,
-            "division_name": division_name
+            "division_name": division_name,
+            "logo_url": logo_url
         }
     
     teams.append(row)
 
 # Load to DataFrame and save
 df = pd.DataFrame(teams)
-df.to_csv(teams_csv, index=False)
+df.to_csv('teams_csv', index=False)
 
 print("Saved mlb_teams.csv")

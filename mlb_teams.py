@@ -20,7 +20,7 @@ for team in data.get("teams"):
     league_name = team.get("league", {}).get("name")
     division_id = team.get("division", {}).get("id")
     division_name = team.get("division", {}).get("name")
-    logo_url = f"https://www.mlbstatic.com/team-logos/team-cap-on-dark/{team_id}.svg"
+    logo_url = f"https://www.mlbstatic.com/team-logos/team-cap-on-light/{team_id}.svg"
 
     row = {
             "team_id": team_id,

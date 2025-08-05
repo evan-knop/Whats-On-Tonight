@@ -1,0 +1,31 @@
+team_id,team_name,wins,losses,win_percentage,games_back,division_rank,wild_card_rank
+141,Toronto Blue Jays,65,48,,-,1,
+111,Boston Red Sox,62,51,,3.0,2,1
+147,New York Yankees,60,52,,4.5,3,2
+139,Tampa Bay Rays,55,58,,10.0,4,7
+110,Baltimore Orioles,51,61,,13.5,5,10
+116,Detroit Tigers,66,48,,-,1,
+114,Cleveland Guardians,56,55,,8.5,2,5
+118,Kansas City Royals,56,56,,9.0,3,6
+142,Minnesota Twins,52,60,,13.0,4,9
+145,Chicago White Sox,42,70,,23.0,5,12
+117,Houston Astros,63,50,,-,1,
+136,Seattle Mariners,60,53,,3.0,2,3
+140,Texas Rangers,58,55,,5.0,3,4
+108,Los Angeles Angels,54,58,,8.5,4,8
+133,Athletics,49,65,,14.5,5,11
+143,Philadelphia Phillies,63,48,,-,1,
+121,New York Mets,63,49,,0.5,2,2
+146,Miami Marlins,55,56,,8.0,3,7
+144,Atlanta Braves,47,63,,15.5,4,10
+120,Washington Nationals,44,67,,19.0,5,11
+158,Milwaukee Brewers,67,44,,-,1,
+112,Chicago Cubs,65,46,,2.0,2,1
+113,Cincinnati Reds,58,54,,9.5,3,4
+138,St. Louis Cardinals,56,57,,12.0,4,6
+134,Pittsburgh Pirates,48,64,,19.5,5,9
+119,Los Angeles Dodgers,65,47,,-,1,
+135,San Diego Padres,62,50,,3.0,2,3
+137,San Francisco Giants,56,56,,9.0,3,5
+109,Arizona Diamondbacks,53,59,,12.0,4,8
+115,Colorado Rockies,30,81,,34.5,5,12

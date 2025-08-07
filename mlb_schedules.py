@@ -20,11 +20,13 @@ for date in data.get("dates", []):
     for game in date["games"]:
         away = game["teams"]["away"]["team"]["name"]
         home = game["teams"]["home"]["team"]["name"]
+        game_time = game["gameDate"]
         
         row = {
             "date": game_date,
             "home": home,
-            "away": away
+            "away": away,
+            "game_time": game_time
         }
         
         games.append(row)

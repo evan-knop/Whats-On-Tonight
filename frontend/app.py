@@ -18,7 +18,8 @@ def load_joined_data():
         away_teams.logo_url AS away_logo,
         away_standings.wins AS away_wins,
         away_standings.losses AS away_losses,
-        s.date
+        s.date,
+        s.game_time
     FROM schedule s
     JOIN teams home_teams ON s.home = home_teams.team_name
     JOIN teams away_teams ON s.away = away_teams.team_name
@@ -32,6 +33,7 @@ def load_joined_data():
     """
     
     df = pd.read_sql_query(query, conn)
+    # Convert string to datetime object
     conn.close()
     return df
 
@@ -44,6 +46,8 @@ df = load_joined_data()
 
 df["home_record"] = df["home_wins"].astype(str) + "-" + df["home_losses"].astype(str)
 df["away_record"] = df["away_wins"].astype(str) + "-" + df["away_losses"].astype(str)
+df["formatted_time"] = pd.to_datetime(df["game_time"]).dt.tz_convert('America/Chicago').dt.strftime("%I:%M %p")
+
 
 num_cols = 2
 cols = st.columns(num_cols)
@@ -60,7 +64,9 @@ for idx, row in df.iterrows():
         st.markdown(
             f"""
             <div style='border: 1px solid #ccc; border-radius: 10px; padding: 10px; margin-bottom: 10px;'>
-                <div style='text-align: center; font-weight: bold; margin-bottom: 10px;'>{row['date']}</div>
+                <div style='text-align: center; font-weight: bold; margin-bottom: 10px;'>
+                    {row['date']} — <span style='font-weight: normal;'>{row['formatted_time']}</span>
+                </div>
                 <div style='display: flex; justify-content: space-between; align-items: center;'>
                     <div style='display: flex; flex-direction: column; align-items: center; width: 40%; min-height: 100px;'>
                         <img src="{home_logo}" style="width:40px; max-height:40px; object-fit: contain; margin-bottom: 5px;"/>
